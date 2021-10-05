@@ -1,0 +1,48 @@
+html{
+	background-color: #09091b;
+	color: white;
+}
+/* Estilos del contenedor principal */
+.mainWrapper{
+	position: absolute;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+}
+/* Animacion de texto del contenedor principal */
+.textAnim{
+  	display: flex;
+  	justify-content: center;
+  	font-family: monospace;
+}
+.textAnim > .text{
+  	max-width: 0;
+  	animation: typing 3s steps(var(--characters)) infinite;
+  	white-space: nowrap;
+  	overflow: hidden;
+}
+.textAnim:after{
+	content: " |";
+	animation: blink 1s infinite;
+	animation-timing-function: step-end;
+}
+@keyframes typing{
+	75%,
+	100%{
+		max-width: calc(var(--characters)* 1ch);
+	}
+}
+@keyframes blink{
+	0%,
+	75%,
+	100%{
+		opacity: 1;
+	}
+	25%{
+		opacity: 0;
+	}
+}
