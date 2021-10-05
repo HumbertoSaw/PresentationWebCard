@@ -1,5 +1,11 @@
 html{
 	background-color: #09091b;
+}
+body{
+	text-align: center;
+}
+*{
+	text-decoration: none;
 	color: white;
 }
 /* Estilos del contenedor principal */
@@ -13,36 +19,10 @@ html{
 	display: flex;
 	flex-direction: row;
 }
-/* Animacion de texto del contenedor principal */
-.textAnim{
-  	display: flex;
-  	justify-content: center;
-  	font-family: monospace;
+.contactMenu{
+	position: fixed;
 }
-.textAnim > .text{
-  	max-width: 0;
-  	animation: typing 3s steps(var(--characters)) infinite;
-  	white-space: nowrap;
-  	overflow: hidden;
-}
-.textAnim:after{
-	content: " |";
-	animation: blink 1s infinite;
-	animation-timing-function: step-end;
-}
-@keyframes typing{
-	75%,
-	100%{
-		max-width: calc(var(--characters)* 1ch);
-	}
-}
-@keyframes blink{
-	0%,
-	75%,
-	100%{
-		opacity: 1;
-	}
-	25%{
-		opacity: 0;
-	}
+.contactMenu ul li{
+	list-style: none;
+	padding-top: 10px;
 }
