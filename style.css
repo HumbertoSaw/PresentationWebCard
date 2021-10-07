@@ -13,7 +13,7 @@ body{
 	position: absolute;
 	margin: 0 auto;
 	top: 40%;
-	left: 30%;
+	left: 25%;
 	width: 35%;
 	height: fit-content;
 	display: flex;
@@ -21,16 +21,28 @@ body{
 	flex-direction: row;
 	justify-content: flex-start;
 }
-
+/* Estilos de texto de animacion y menu de links*/
 .textAnim{
-	font-size: 200%;
+	font-family:'Roboto', sans-serif;
+	font-size: 400%;
 }
 .contactMenu{
+	top: -25%;
 	right: 0%;
 	position: absolute;
 	text-align: right;
 }
 .contactMenu ul li{
+	font-family: Verdana;
 	list-style: none;
-	padding-top: 10px;
+	padding-top: 10%;
+}
+#linkedin{
+	color: #0e76a8 ;
+}
+#myWeb{
+	color: #FF97D9;
+}
+#cv{
+	color: #4CDC94;
 }
