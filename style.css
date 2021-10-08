@@ -4,30 +4,62 @@ html{
 body{
 	text-align: center;
 }
-*{
+*{	
+	color: #FFFFFF;
 	text-decoration: none;
-	color: whitesmoke;
 }
+
+/* Texto de arriba fuera del contenedor principal */
+.upperText{
+	top: 30%;
+	left: 20%;
+	font-family:'Roboto', sans-serif;
+	font-style: italic;
+	color: #FF3F70;
+	font-size: 300%;
+	position: absolute;
+}
+
+/* Estilos de animacion de mano saludando */
+/* Animacion obtenida de https://jarv.is/notes/css-waving-hand-emoji/ */
+.wave {
+	font-style: normal;
+  	animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+ 	animation-duration: 2.5s;        /* Change to speed up or slow down */
+ 	animation-iteration-count: infinite;  /* Never stop waving :) */
+  	transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+ 	display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 /* Estilos del contenedor principal */
 .mainWrapper{
 	position: absolute;
 	margin: 0 auto;
 	top: 40%;
 	left: 25%;
-	width: 35%;
+	width: 31%;
 	height: fit-content;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
 }
+
 /* Estilos de texto de animacion y menu de links*/
 .textAnim{
 	font-family:'Roboto', sans-serif;
 	font-size: 400%;
 }
 .contactMenu{
-	top: -25%;
+	top: -27%;
 	right: 0%;
 	position: absolute;
 	text-align: right;
@@ -45,4 +77,8 @@ body{
 }
 #cv{
 	color: #4CDC94;
+}
+
+@media(max-width:){
+	
 }
