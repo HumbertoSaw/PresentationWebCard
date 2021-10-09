@@ -107,13 +107,13 @@ body{
 
 @media only screen and (max-device-width:550px ){
 	.upperText{
- 		font-size: 400%;
+ 		font-size: 450%;
  	}
  	.textAnim{
- 		font-size: 500%;
+ 		font-size: 550%;
  	}
  	.material-icons{
- 		font-size: 200%;
+ 		font-size: 250%;
  	}
 
 }
