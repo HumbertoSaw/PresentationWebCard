@@ -103,13 +103,17 @@ body{
 		padding-left: 30px;
  		display: inline-block;
  	}
- 	.upperText{
+}
+
+@media only screen and (max-device-width:550px ){
+	.upperText{
  		font-size: 400%;
  	}
  	.textAnim{
  		font-size: 500%;
  	}
  	.material-icons{
- 		font-size: 150%;
+ 		font-size: 200%;
  	}
+
 }
