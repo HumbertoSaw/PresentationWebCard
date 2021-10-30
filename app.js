@@ -57,20 +57,15 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
-/*
-function imgDisp(num){
+document.addEventListener("DOMContentLoaded", function(){
 
-    var images = ['resources/fondo1.png',
-    'resources/fondo2.png',
-    'resources/fondo3.png',
-    ];
+     var images = ['imagenes/fondo1.png', 'imagenes/fondo2.png', 'imagenes/fondo3.png'];
 
-    var img = document.body.style.backgroundImage;
+    var image = images[Math.floor(Math.random() * images.length)];
 
-    var num = Math.floor(Math.random()*images.length);
+    console.log( document.getElementsByTagName('body')[0]);
 
-    document.body.style.backgroundImage = 'url('+images[num]+')';
-
-}
-window.onload=imgDisp;
-*/
+    document.getElementsByTagName('body')[0].style.backgroundImage = `url(${image})`;
+    document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
+    document.getElementsByTagName('body')[0].style.backgroundSize = "cover";
+});

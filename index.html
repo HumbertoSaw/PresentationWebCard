@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script type="text/javascript">
-        window.onload = function () {
-            var images = ['imagenes/fondo1.png', 'imagenes/fondo2.png', 'imagenes/fondo3.png'];
-            var image = images[Math.floor(Math.random() * images.length)];
-            document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
-            document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
-            document.getElementsByTagName('body')[0].style.backgroundSize = "cover";
-        }
-	</script>
-	<style type="text/css">
-		.bg {background-attachment:fixed; background-repeat: no-repeat;}
-	</style>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="bg">
-
 	<div class="upperImg">
 		<img class="svg" src="resources/figure1.svg">
 	</div>
@@ -56,6 +43,5 @@
 	</div>
 	
 	<script src="app.js" language="javascript" type="text/javascript"></script>
-	
 </body>
 </html>

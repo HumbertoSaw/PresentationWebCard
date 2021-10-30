@@ -1,8 +1,12 @@
 html{
-	background-color: #09091b;
+	/*background-color: #09091b;*/
 }
 body{
 	text-align: center;
+}
+.bg {
+	background-attachment:fixed;
+	background-repeat: no-repeat;
 }
 *{	
 	color: #FFFFFF;
