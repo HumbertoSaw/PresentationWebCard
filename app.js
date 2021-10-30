@@ -56,3 +56,21 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+/*
+function imgDisp(num){
+
+    var images = ['resources/fondo1.png',
+    'resources/fondo2.png',
+    'resources/fondo3.png',
+    ];
+
+    var img = document.body.style.backgroundImage;
+
+    var num = Math.floor(Math.random()*images.length);
+
+    document.body.style.backgroundImage = 'url('+images[num]+')';
+
+}
+window.onload=imgDisp;
+*/
