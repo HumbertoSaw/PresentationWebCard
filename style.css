@@ -11,7 +11,7 @@ body{
 .flex-container{
 	top: 600px;
 	display: flex;
-	height: 900px;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -104,6 +104,9 @@ ul, li{
 }
 
 @media only screen and (max-device-width:550px ){
+	.contactMenu{
+		padding-right: 650px;
+	}
 	.upperText{
  		font-size: 450%;
 	}
