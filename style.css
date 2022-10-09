@@ -1,10 +1,18 @@
 
 .bg {
+	font-family:'Roboto', sans-serif;
+	font-weight: bold;
 	background-attachment:fixed;
 	background-repeat: no-repeat;
+	background-color: #212121;
 }
 .flex-container{
-
+	margin-top: 8em;
+	flex-direction: column;
+	row-gap: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 *{	
 	color: #FFFFFF;
@@ -12,10 +20,18 @@
 }
 /* Texto y imagen de arriba fuera del contenedor principal */
 .myname{
-
+	font-size: 1.5em;
+	font-family: Verdana;
+	font-weight: lighter;
 }
-.blacksvg{
-
+.contactMenu{
+	margin-top: 15em;
+	position: absolute;
+	text-align: left;
+}
+/* Estilos de texto de animacion y menu de links*/
+.textAnim{
+	font-size: 400%;
 }
 
 /* Estilos de animacion de mano saludando */
@@ -39,42 +55,9 @@
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-
-/* Estilos del contenedor principal */
-.animText{
-
-}
-
-/* Estilos de texto de animacion y menu de links*/
-.textAnim{
-	display: inline-block;
-	font-family:'Roboto', sans-serif;
-	font-size: 400%;
-}
-.contactMenu{
-	display: inline-block;
-	position: absolute;
-	text-align: right;
-}
-.material-icons{
- 	font-size: 200%;
- }
-.contactMenu ul, li{
-	font-family: Verdana;
-	list-style: none;
-}
 ul, li{
  		display: inline-block;
  	}
-#linkedin{
-	color: #0e76a8 ;
-}
-#myWeb{
-	color: #FF97D9;
-}
-#cv{
-	color: #4CDC94;
-}
 
 @media only screen and (max-device-width:550px ){
 

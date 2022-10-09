@@ -57,15 +57,3 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
-document.addEventListener("DOMContentLoaded", function(){
-
-     var images = ['imagenes/fondo1.png', 'imagenes/fondo2.png', 'imagenes/fondo3.png'];
-
-    var image = images[Math.floor(Math.random() * images.length)];
-
-    console.log( document.getElementsByTagName('body')[0]);
-
-    document.getElementsByTagName('body')[0].style.backgroundImage = `url(${image})`;
-    document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
-    document.getElementsByTagName('body')[0].style.backgroundSize = "cover";
-});
