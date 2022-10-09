@@ -1,0 +1,115 @@
+html{
+	background-color: #09091b;
+}
+body{
+	text-align: center;
+}
+*{	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* Texto y imagen de arriba fuera del contenedor principal */
+.upperText{
+	top: 300px;
+	left: 20%;
+	font-family:'Roboto', sans-serif;
+	font-style: italic;
+	color: #FF3F70;
+	font-size: 300%;
+	position: absolute;
+}
+.upperImg{
+	top: 200px;
+	left: 5%;
+	position: absolute;
+}
+.img{
+	width: 250%;
+	height: 250%;
+}
+
+/* Estilos de animacion de mano saludando */
+/* Animacion obtenida de https://jarv.is/notes/css-waving-hand-emoji/ */
+.wave {
+	font-style: normal;
+  	animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+ 	animation-duration: 2.5s;        /* Change to speed up or slow down */
+ 	animation-iteration-count: infinite;  /* Never stop waving :) */
+  	transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+ 	display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/* Estilos del contenedor principal */
+.mainWrapper{
+	position: absolute;
+	margin: 0 auto;
+	top: 400px;
+	left: 25%;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Estilos de texto de animacion y menu de links*/
+.textAnim{
+	display: inline-block;
+	font-family:'Roboto', sans-serif;
+	font-size: 400%;
+}
+.contactMenu{
+	top: 320px;
+	left: 55%;
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+}
+.contactMenu ul, li{
+	font-family: Verdana;
+	list-style: none;
+	padding-top: 20px;
+}
+#linkedin{
+	color: #0e76a8 ;
+}
+#myWeb{
+	color: #FF97D9;
+}
+#cv{
+	color: #4CDC94;
+}
+
+@media(max-width: 1400px){
+	.mainWrapper{
+		flex-direction: column;
+	}
+	.contactMenu{
+		top: 500px;
+		left: 20%;
+		font-size: 150%;
+	}
+	ul, li{
+		padding-left: 30px;
+ 		display: inline-block;
+ 	}
+ 	.upperText{
+ 		font-size: 400%;
+ 	}
+ 	.textAnim{
+ 		font-size: 500%;
+ 	}
+ 	.material-icons{
+ 		font-size: 150%;
+ 	}
+}
