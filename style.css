@@ -60,6 +60,9 @@ ul, li{
  	}
 
 @media only screen and (max-device-width:550px ){
+	.textAnim{
+		font-size: 300%;
+	}
 
 }
 
