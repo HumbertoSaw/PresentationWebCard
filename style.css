@@ -11,10 +11,10 @@
 	text-decoration: none;
 }
 /* Texto y imagen de arriba fuera del contenedor principal */
-.upperText{
+.myname{
 
 }
-.upperImg{
+.blacksvg{
 
 }
 
@@ -52,8 +52,6 @@
 	font-size: 400%;
 }
 .contactMenu{
-	padding-top: 180px;
-	padding-right: 520px;
 	display: inline-block;
 	position: absolute;
 	text-align: right;
@@ -66,7 +64,6 @@
 	list-style: none;
 }
 ul, li{
-		padding-left: 30px;
  		display: inline-block;
  	}
 #linkedin{
