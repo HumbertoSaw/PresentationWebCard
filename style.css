@@ -1,19 +1,10 @@
-html{
-	/*background-color: #09091b;*/
-}
-body{
-	text-align: center;
-}
+
 .bg {
 	background-attachment:fixed;
 	background-repeat: no-repeat;
 }
 .flex-container{
-	top: 600px;
-	display: flex;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
+
 }
 *{	
 	color: #FFFFFF;
@@ -21,19 +12,10 @@ body{
 }
 /* Texto y imagen de arriba fuera del contenedor principal */
 .upperText{
-	padding-bottom: 180px;
-	padding-left: 140px;
-	font-family:'Roboto', sans-serif;
-	font-style: italic;
-	color: #FF3F70;
-	font-size: 300%;
-	position: absolute;
+
 }
 .upperImg{
-	padding-top: 550px;
-	position: absolute;
-	width: 800px;
-	height: 800px;
+
 }
 
 /* Estilos de animacion de mano saludando */
@@ -60,12 +42,7 @@ body{
 
 /* Estilos del contenedor principal */
 .animText{
-	padding-top: 20px;
-	padding-right: 100px;
-	position: absolute;
-	margin: 0 auto;
-	width: fit-content;
-	height: fit-content;
+
 }
 
 /* Estilos de texto de animacion y menu de links*/
@@ -87,7 +64,6 @@ body{
 .contactMenu ul, li{
 	font-family: Verdana;
 	list-style: none;
-	padding-top: 20px;
 }
 ul, li{
 		padding-left: 30px;
@@ -104,22 +80,6 @@ ul, li{
 }
 
 @media only screen and (max-device-width:550px ){
-	.contactMenu{
-		padding-right: 650px;
-	}
-	.upperText{
- 		font-size: 450%;
-	}
- 	.textAnim{
- 		font-size: 550%;
- 	}
- 	.material-icons{
- 		font-size: 350%;
- 	}
- 	.upperImg{
- 		padding-top: 740px;
- 		width: 1100px;
-		height: 1100px;
- 	}
+
 }
 
